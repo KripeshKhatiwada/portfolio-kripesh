@@ -1,10 +1,10 @@
 // No heavy JavaScript needed.
 // This file exists for future expansion.
+
 console.log("Portfolio loaded");
 
 // Smooth reveal on scroll
 const reveals = document.querySelectorAll(".reveal");
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
       current = sec.id;
     }
   });
-
+  
   navLinks.forEach(a => {
     a.classList.remove("active");
     if (a.getAttribute("href") === "#" + current) {
