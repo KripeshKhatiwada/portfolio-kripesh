@@ -126,6 +126,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+.project a:hover {
+  text-decoration: underline;
+}
+
 /* REVEAL */
 .reveal {
   opacity: 0;
@@ -150,4 +154,9 @@ nav a:hover {
   border-radius: 6px;
   cursor: pointer;
   display: none;
+  z-index: 5;
+}
+
+#topBtn:hover {
+  background: var(--border);
 }
